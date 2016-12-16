@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CellView" customModule="FundooHR_Client" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="298" height="414"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WHr-pD-vP2">
+                    <rect key="frame" x="0.0" y="0.0" width="298" height="207"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPW-zs-uEg">
+                            <rect key="frame" x="128" y="93" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="yPW-zs-uEg" firstAttribute="centerX" secondItem="WHr-pD-vP2" secondAttribute="centerX" id="7IQ-Fi-bKP"/>
+                        <constraint firstItem="yPW-zs-uEg" firstAttribute="centerY" secondItem="WHr-pD-vP2" secondAttribute="centerY" id="9XQ-0H-lot"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpI-qg-wwS">
+                    <rect key="frame" x="0.0" y="207" width="298" height="207"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A_check" translatesAutoresizingMaskIntoConstraints="NO" id="4Le-Yg-Agd">
+                            <rect key="frame" x="74.5" y="29" width="149" height="149"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="4Le-Yg-Agd" secondAttribute="height" id="BOb-sg-GPi"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="4Le-Yg-Agd" firstAttribute="centerY" secondItem="fpI-qg-wwS" secondAttribute="centerY" id="H7t-A4-TyU"/>
+                        <constraint firstItem="4Le-Yg-Agd" firstAttribute="width" secondItem="fpI-qg-wwS" secondAttribute="width" multiplier="0.5" id="ITQ-MB-jDn"/>
+                        <constraint firstItem="4Le-Yg-Agd" firstAttribute="centerX" secondItem="fpI-qg-wwS" secondAttribute="centerX" id="zGw-1l-K82"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WHr-pD-vP2" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="BZX-N7-leJ"/>
+                <constraint firstAttribute="trailing" secondItem="fpI-qg-wwS" secondAttribute="trailing" id="EeC-bQ-6ZE"/>
+                <constraint firstItem="WHr-pD-vP2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FJ2-ho-H01"/>
+                <constraint firstItem="fpI-qg-wwS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Q5w-1U-Lh7"/>
+                <constraint firstItem="WHr-pD-vP2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RBD-cb-oWz"/>
+                <constraint firstItem="fpI-qg-wwS" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="aMM-e9-Rtd"/>
+                <constraint firstAttribute="bottom" secondItem="fpI-qg-wwS" secondAttribute="bottom" id="oqb-cu-g7I"/>
+                <constraint firstAttribute="trailing" secondItem="WHr-pD-vP2" secondAttribute="trailing" id="vzP-eM-HfX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dayLabel" destination="yPW-zs-uEg" id="C7I-II-q8V"/>
+                <outlet property="markImageView" destination="4Le-Yg-Agd" id="8RV-LI-mi9"/>
+            </connections>
+            <point key="canvasLocation" x="-71" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="A_check" width="21" height="21"/>
+    </resources>
+</document>
